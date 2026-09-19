@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Chương 3 - Buttons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+
+    <div class="container text-center">
+        <h3 class="mb-4">BÀI TẬP CHƯƠNG 3</h3>
+
+        <!-- a) Định nghĩa các class buttons -->
+        <div class="mb-4 text-center">
+            <h5 class="mb-3 text-start">a) Định nghĩa các class buttons</h5>
+            <div class="d-flex flex-nowrap justify-content-center align-items-center gap-2 overflow-auto py-2">
+                <button type="button" class="btn btn-secondary text-nowrap">Default Button</button>
+                <button type="button" class="btn btn-primary text-nowrap">Primary Button</button>
+                <button type="button" class="btn btn-success text-nowrap">Success Button</button>
+                <button type="button" class="btn btn-info text-nowrap">Info Button</button>
+                <button type="button" class="btn btn-warning text-nowrap">Warning Button</button>
+                <button type="button" class="btn btn-danger text-white text-nowrap">Danger Button</button>
+                <button type="button" class="btn bg-white text-dark border shadow-none text-decoration-none text-nowrap">Link Button</button>
+            </div>
+        </div>
+
+        <!-- b) Button với đường viền -->
+        <div class="mb-4 text-center">
+            <h5 class="mb-3 text-start">b) Button với đường viền</h5>
+            <div class="d-flex flex-nowrap justify-content-center align-items-center gap-2 overflow-auto py-2">
+                <button type="button" class="btn btn-outline-primary text-nowrap">Primary</button>
+                <button type="button" class="btn btn-outline-secondary text-nowrap">Secondary</button>
+                <button type="button" class="btn btn-outline-success text-nowrap">Success</button>
+                <button type="button" class="btn btn-outline-info text-nowrap">Info</button>
+                <button type="button" class="btn btn-outline-warning text-nowrap">Warning</button>
+                <button type="button" class="btn btn-outline-danger text-nowrap">Danger</button>
+                <button type="button" class="btn btn-outline-dark text-nowrap">Dark</button>
+                <button type="button" class="btn btn-outline-light text-dark border text-nowrap">Light</button>
+            </div>
+        </div>
+
+        <!-- c) Kích thước của button -->
+        <div class="mb-4 text-center">
+            <h5 class="mb-3 text-start">c) Kích thước của button</h5>
+            <div class="d-flex flex-nowrap justify-content-center align-items-center gap-2 overflow-auto py-2">
+                <button type="button" class="btn btn-secondary btn-lg text-nowrap">Nút to</button>
+                <button type="button" class="btn btn-secondary text-nowrap">Kích thước mặc định</button>
+                <button type="button" class="btn btn-secondary btn-sm text-nowrap">Nút nhỏ</button>
+            </div>
+        </div>
+
+        <!-- d) Thành phần của Button -->
+        <div class="mb-4 text-center">
+            <h5 class="mb-3 text-start">d) Thành phần của Button</h5>
+            <div class="d-flex flex-nowrap justify-content-center align-items-center gap-2 overflow-auto py-2">
+                <a class="btn btn-secondary text-nowrap" href="#" role="button">Button chứa link</a>
+                <button type="button" class="btn btn-secondary text-nowrap">Button</button>
+                <input class="btn btn-secondary text-nowrap" type="button" value="Input Button">
+                <input class="btn btn-secondary text-nowrap" type="submit" value="Submit Button">
+            </div>
+        </div>
+
+        <!-- e) Trạng thái của nút -->
+        <div class="mb-4 text-center">
+            <h5 class="mb-3 text-start">e) Trạng thái của nút</h5>
+            <div class="d-flex flex-nowrap justify-content-center align-items-center gap-2 overflow-auto py-2">
+                <button type="button" class="btn btn-secondary text-nowrap">Nút bình thường</button>
+                <button type="button" class="btn btn-secondary active text-nowrap">Nút có thể click</button>
+                <button type="button" class="btn btn-secondary text-nowrap" disabled>Nút không thể click</button>
+                <a href="#" class="btn btn-secondary disabled text-nowrap" tabindex="-1" role="button">Link không thể click</a>
+            </div>
+        </div>
+
+        <!-- f) Nút đang load -->
+        <div class="mb-4 text-center">
+            <h5 class="mb-3 text-start">f) Nút đang load</h5>
+            <p class="text-muted text-start mb-2">Thêm trạng thái đang load cho nút:</p>
+            <div class="d-flex flex-nowrap justify-content-center align-items-center gap-2 overflow-auto py-2">
+                <button class="btn btn-secondary text-nowrap" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    C Loading..
+                </button>
+                <button class="btn btn-secondary text-nowrap" type="button" disabled>
+                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                    C Loading..
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
